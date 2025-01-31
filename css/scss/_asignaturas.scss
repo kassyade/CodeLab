@@ -1,0 +1,10 @@
+#idPagAsignaturas {
+    display: grid;
+    grid-template-columns: 8% 92%;
+    grid-template-rows: 100px 250px 50px 150px 300px;
+}
+
+.encabezado {
+    grid-row: 1;
+    background-color: $menu;
+}
