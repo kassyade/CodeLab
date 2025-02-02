@@ -1,10 +1,151 @@
+
+body>*{
+    //border: 1px solid white;
+    color: white;
+}
+
+.barra-menu{display: none;}
+hr {border-color: #C678DD;}
+
 #idPagAsignaturas {
     display: grid;
-    grid-template-columns: 8% 92%;
-    grid-template-rows: 100px 250px 50px 150px 300px;
+    grid-template-columns: 5% 95%;
+    grid-template-rows: 100px 300px 150px 300px;
 }
+
+.encabezado, .barra-lateral, #lista {background-color: $menu;}
 
 .encabezado {
     grid-row: 1;
-    background-color: $menu;
+    grid-column: 2;
+    align-items: center;
+    display: flex;
+    position: relative;
+    #logos-pequeños {
+        position: absolute;
+        right: 25px;
+        top: 5px;
+        color: #b2b2b2;
+    }
+}
+
+.barra-lateral {
+    grid-template-columns: 1;
+    grid-row: 1/6;
+    #barra-logos {
+        margin-top: 60px;
+        color: #C678DD;
+        div {
+            margin-top: 20px;
+        }
+    }
+}
+
+#idImag {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1% 48.75% 0.5% 48.75% 1%;
+    grid-template-rows: 45px 245px 10px;
+    p {
+        grid-column: 2;
+    }
+    #logo1 {
+        grid-column: 2;
+        grid-row: 2;
+        background-image: url("/imagenes/logo_javascript.jpeg");
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+    }
+    #logo2 {
+        grid-column: 4;
+        grid-row: 2;
+        background-image: url("/imagenes/logo_python.jpg");
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+    }
+}
+
+#lista {
+    grid-row: 3;
+    p {
+        margin-left: 10px;
+        line-height: 0.2;
+    }
+    .tit-asignatura {font-size: 90%;}
+    .parr-gris {font-size: 70%;}
+    .listado {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #logo3 {
+        background-image: url("/imagenes/logo_javascript2.png");
+        width: 35px;
+        height: 35px;
+        background-size: cover;
+        background-position: center;
+    }
+    #logo4 {
+        background-image: url("/imagenes/logo_python2.jpeg");
+        width: 35px;
+        height: 35px;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (max-width:427px) {
+    #idPagAsignaturas {
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 400px 150px 300px;
+    }
+    .encabezado {
+        grid-row: 1;
+        grid-column: 1;
+        .barra-menu{display: contents;}
+    }
+
+    .barra-lateral {
+        display: none;
+    }
+
+    #idImag {
+        grid-row: 2;
+        grid-template-columns: 1% 48.75% 0.5% 48.75% 1%;
+        grid-template-rows: 45px auto 10px;
+
+        p {
+            grid-column: 2;
+        }
+        #logo1 {
+            background-image: url("/imagenes/logo_javascript3.jpeg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            grid-column: 2;
+            grid-row: 2;
+            border: 1px solid white;
+        }
+
+        #logo2 {
+            background-image: url("/imagenes/logo_python3.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            grid-column: 4;
+            grid-row: 2;
+            border: 1px solid white;
+        }
+    }
+
+    #lista {
+        grid-row: 3;
+        #logo3 {
+            background-image: url("/imagenes/logo_javascript3.jpeg");
+        }
+        #logo4 {
+            background-image: url("/imagenes/logo_python3.png");
+        }
+    }
+    
 }
