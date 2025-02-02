@@ -1,0 +1,14 @@
+.header-global {
+    background-color: #282C34;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; // Asegura que esté por encima de otros elementos
+    height: 60px; // Altura fija para el header-global
+    .logo {
+        width: 130px;
+        height: auto;
+    }
+}

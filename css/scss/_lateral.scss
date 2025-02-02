@@ -1,0 +1,27 @@
+.lateral {
+    width: $barra-width;
+    background-color: $color-secondario;
+    height: calc(100vh - 60px); // Ajusta la altura restando la altura del header-global
+    position: fixed;
+    top: 120px; // Colócalo debajo del header-global
+    left: 3%; // Ajusta el margen izquierdo para que no se superponga con lateral-global
+    z-index: 998; // Asegura que esté por debajo de lateral-global
+    padding: 20px;
+
+    ul {
+        list-style: none;
+
+        li {
+            padding: 10px;
+            cursor: pointer;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.1);
+            }
+
+            &.seleccionada {
+                border-left: solid 3px $color-principal;
+            }
+        }
+    }
+}

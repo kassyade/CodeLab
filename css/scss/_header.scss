@@ -1,0 +1,28 @@
+.contenido {
+    flex: 1;
+    padding: 20px;
+
+    .header {
+        background-color: $fondo-negro;
+        padding: 10px;
+        position: fixed;
+        top: 60px; // Justo debajo del header-global (altura del header-global)
+        left: 4%;
+        width: 95%;
+        z-index: 999; // Un z-index menor que el del header-global
+        height: 50px; // Altura fija para el header
+        float: left;
+        border-bottom: solid 2px $color-principal ;
+    }
+
+        .menu-btn {
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: $text-claro;
+            margin-right: 10px;
+            cursor: pointer;
+            display: none;
+    }
+}
+
