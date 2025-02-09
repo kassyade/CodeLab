@@ -108,21 +108,24 @@ hr {
 #idImag p {
   grid-column: 2;
 }
-#idImag #logo1 {
+#idImag #logo1-pequeño, #idImag #logo2-pequeño {
+  display: none;
+}
+#idImag #logo1, #idImag #logo1-pequeño {
   grid-column: 2;
   grid-row: 2;
-  background-image: url("/imagenes/logo_javascript.jpeg");
-  background-size: cover;
-  background-position: center;
   border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
-#idImag #logo2 {
+#idImag #logo2, #idImag #logo2-pequeño {
   grid-column: 4;
   grid-row: 2;
-  background-image: url("/imagenes/logo_python.jpg");
-  background-size: cover;
-  background-position: center;
   border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 #lista {
@@ -144,18 +147,14 @@ hr {
   align-items: center;
 }
 #lista #logo3 {
-  background-image: url("/imagenes/logo_javascript2.png");
   width: 35px;
   height: 35px;
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
 }
 #lista #logo4 {
-  background-image: url("/imagenes/logo_python2.jpeg");
   width: 35px;
   height: 35px;
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
 }
 
 @media (max-width: 427px) {
@@ -181,30 +180,15 @@ hr {
   #idImag p {
     grid-column: 2;
   }
-  #idImag #logo1 {
-    background-image: url("/imagenes/logo_javascript3.jpeg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    grid-column: 2;
-    grid-row: 2;
-    border: 1px solid white;
+  #idImag #logo1, #idImag #logo2 {
+    display: none;
   }
-  #idImag #logo2 {
-    background-image: url("/imagenes/logo_python3.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    grid-column: 4;
-    grid-row: 2;
+  #idImag #logo1-pequeño, #idImag #logo2-pequeño {
+    display: block;
     border: 1px solid white;
   }
   #lista {
     grid-row: 3;
-  }
-  #lista #logo3 {
-    background-image: url("/imagenes/logo_javascript3.jpeg");
-  }
-  #lista #logo4 {
-    background-image: url("/imagenes/logo_python3.png");
   }
 }
 * {
