@@ -1,4 +1,21 @@
 @charset "UTF-8";
+.general {
+  display: flex;
+  background-color: #121212;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.curso-unidades {
+  max-width: 800px;
+  margin-left: 20%;
+  margin-top: 8%;
+  text-align: justify;
+}
+
 body {
   background-color: #1E1E1E;
   color: #ffffff;
@@ -116,38 +133,33 @@ hr {
   grid-template-rows: 100px 300px 150px 300px;
 }
 
-.encabezado, .barra-lateral, #lista {
+#lista {
   background-color: #282C34;
 }
 
 .encabezado {
   grid-row: 1;
-  grid-column: 2;
-  align-items: center;
-  display: flex;
-  position: relative;
+  grid-column: 1/3;
+  height: 100px;
 }
 .encabezado #logos-pequeños {
-  position: absolute;
-  right: 25px;
-  top: 5px;
   color: #b2b2b2;
 }
 
 .barra-lateral {
   grid-template-columns: 1;
-  grid-row: 1/6;
+  grid-row: 2/5;
 }
 .barra-lateral #barra-logos {
-  margin-top: 60px;
   color: #C678DD;
 }
 .barra-lateral #barra-logos div {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 #idImag {
   grid-row: 2;
+  grid-column: 2;
   display: grid;
   grid-template-columns: 1% 48.75% 0.5% 48.75% 1%;
   grid-template-rows: 45px 245px 10px;
@@ -177,10 +189,10 @@ hr {
 
 #lista {
   grid-row: 3;
+  grid-column: 2;
 }
 #lista p {
   margin-left: 10px;
-  line-height: 0.2;
 }
 #lista .tit-asignatura {
   font-size: 90%;
@@ -192,6 +204,7 @@ hr {
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: 60px;
 }
 #lista #logo3 {
   width: 35px;
@@ -221,6 +234,7 @@ hr {
   }
   #idImag {
     grid-row: 2;
+    grid-column: 1;
     grid-template-columns: 1% 48.75% 0.5% 48.75% 1%;
     grid-template-rows: 45px auto 10px;
   }
@@ -236,38 +250,30 @@ hr {
   }
   #lista {
     grid-row: 3;
+    grid-column: 1;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  display: flex;
-  background-color: #121212;
-  color: #eee;
-}
-
-.contenido {
-  flex: 1;
-  padding: 20px;
-}
-.contenido .header {
+.header {
   background-color: #121212;
   padding: 10px;
   position: fixed;
   top: 60px;
-  left: 4%;
-  width: 95%;
+  left: 3%;
+  width: 100%;
   z-index: 999;
   height: 50px;
   float: left;
   border-bottom: solid 2px #ab80d7;
+  margin: 0;
 }
-.contenido .menu-btn {
+.header .hamb {
+  height: auto;
+  position: absolute;
+  font-size: 22pt;
+  top: -60%;
+}
+
+.menu-btn {
   background: none;
   border: none;
   font-size: 24px;
@@ -282,10 +288,11 @@ body {
   background-color: #464646;
   height: calc(100vh - 60px);
   position: fixed;
-  top: 120px;
+  top: 110px;
   left: 3%;
   z-index: 998;
   padding: 20px;
+  font-size: 14pt;
 }
 .lateral ul {
   list-style: none;
@@ -293,6 +300,9 @@ body {
 .lateral ul li {
   padding: 10px;
   cursor: pointer;
+}
+.lateral ul li a {
+  color: white;
 }
 .lateral ul li:hover {
   background: rgba(255, 255, 255, 0.1);
@@ -304,7 +314,7 @@ body {
 .curso {
   max-width: 800px;
   margin-left: 20%;
-  margin-top: 9%;
+  margin-top: 4%;
   text-align: justify;
 }
 .curso .jspc {
@@ -337,17 +347,6 @@ body {
 }
 .curso ul li, .curso ol li {
   margin-bottom: 10px;
-}
-.curso .consejo {
-  margin-top: 20px;
-  font-style: italic;
-  color: yellow;
-}
-.curso .contenido {
-  position: fixed;
-  top: 20%;
-  padding: 20px;
-  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -442,6 +441,12 @@ body {
   margin-left: 50%;
 }
 
+.foro {
+  position: fixed;
+  top: 14%;
+  left: 20%;
+}
+
 .debates {
   background-color: #464646;
   padding: 10px;
@@ -511,5 +516,11 @@ body {
 }
 
 .foro-cuenta-regresiva {
-  margin-left: 47%;
+  position: fixed;
+  left: 35%;
+  top: 75%;
+}
+.foro-cuenta-regresiva iframe {
+  position: fixed;
+  right: 42%;
 }/*# sourceMappingURL=style.css.map */

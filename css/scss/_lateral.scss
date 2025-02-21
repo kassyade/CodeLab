@@ -3,10 +3,11 @@
     background-color: $color-secondario;
     height: calc(100vh - 60px); // Ajusta la altura restando la altura del header-global
     position: fixed;
-    top: 120px; // Colócalo debajo del header-global
+    top: 110px; // Colócalo debajo del header-global
     left: 3%; // Ajusta el margen izquierdo para que no se superponga con lateral-global
     z-index: 998; // Asegura que esté por debajo de lateral-global
     padding: 20px;
+    font-size: 14pt;
 
     ul {
         list-style: none;
@@ -14,6 +15,10 @@
         li {
             padding: 10px;
             cursor: pointer;
+
+            a{
+                color: white;
+            }
 
             &:hover {
                 background: rgba(255, 255, 255, 0.1);

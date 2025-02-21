@@ -1,7 +1,7 @@
 .curso {
     max-width: $max-width;
     margin-left: 20%;
-    margin-top: 9%;
+    margin-top: 4%;
     text-align: justify;
 
 
@@ -47,20 +47,7 @@
             margin-bottom: 10px;
         }
     }
-
-    .consejo {
-        margin-top: 20px;
-        font-style: italic;
-        color: yellow;
-    }
-
-    .contenido {
-
-        position: fixed;
-        top:20%;
-        padding: 20px;
-        width: 100%;
-    }
+    
 }
 
 // Responsive
