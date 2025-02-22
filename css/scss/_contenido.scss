@@ -50,7 +50,7 @@
     
 }
 
-// Responsive
+
 @media (max-width: 768px) {
     .lateral-global, .lateral {
         display: none;
@@ -61,9 +61,9 @@
     }
 
     .main-content {
-    margin-left: calc(3% + #{$barra-width}); // Ajusta el margen izquierdo para no superponerse con los menús
-    margin-top: 60px; // Ajusta el margen superior para no superponerse con el header-global
+    margin-left: calc(3% + #{$barra-width}); 
+    margin-top: 60px;
     padding: 20px;
-    width: calc(100% - 3% - #{$barra-width}); // Ajusta el ancho para no superponerse con los menús
+    width: calc(100% - 3% - #{$barra-width});
 }
 }

@@ -32,6 +32,7 @@
       color: $text-claro;
       font-family: $font-stack;
       transition: background 0.3s ease;
+      font-size: 14pt;
 
       &:last-child {
         border-bottom: none;
@@ -49,7 +50,6 @@
   margin: 20px auto;
   width: 100%;
   padding: 20px;
-  background-color: $fondo-negro;
   border-radius: 5px;
   border: 2px dashed $color-secondario;
   position: relative;
@@ -87,12 +87,12 @@
 
   position: fixed;
   left: 35%;
-  top: 75%;
+  top: 76%;
 
   iframe{
 
     position: fixed;
-    right: 42%;
+    right: 36%;
 
   }
 

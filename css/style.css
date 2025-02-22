@@ -419,6 +419,7 @@ hr {
   width: 100%;
   margin: 30px;
   margin-left: 300px;
+  margin-top: 18%;
 }
 .unidades h2, .ejercicios h2 {
   color: #ab80d7;
@@ -436,6 +437,7 @@ hr {
   border-bottom: 1px solid #ab80d7;
   color: #eee;
   font-family: Arial, sans-serif;
+  font-size: 14pt;
   transition: background 0.3s ease;
 }
 .unidades ul li:last-child, .ejercicios ul li:last-child {
@@ -481,6 +483,7 @@ hr {
   color: #eee;
   font-family: Arial, sans-serif;
   transition: background 0.3s ease;
+  font-size: 14pt;
 }
 .debates ul li:last-child {
   border-bottom: none;
@@ -494,7 +497,6 @@ hr {
   margin: 20px auto;
   width: 100%;
   padding: 20px;
-  background-color: #121212;
   border-radius: 5px;
   border: 2px dashed #464646;
   position: relative;
@@ -527,9 +529,9 @@ hr {
 .foro-cuenta-regresiva {
   position: fixed;
   left: 35%;
-  top: 75%;
+  top: 76%;
 }
 .foro-cuenta-regresiva iframe {
   position: fixed;
-  right: 42%;
+  right: 36%;
 }/*# sourceMappingURL=style.css.map */
