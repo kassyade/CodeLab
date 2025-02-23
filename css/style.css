@@ -171,7 +171,7 @@ hr {
 #idPagAsignaturas {
   background-color: #121212;
   display: grid;
-  grid-template-columns: 5% 95%;
+  grid-template-columns: 3% 97%;
   grid-template-rows: 70px 300px 172px 300px;
 }
 
@@ -195,7 +195,7 @@ hr {
 .barra-lateral {
   grid-template-columns: 1;
   grid-row: 2/5;
-  width: 5%;
+  width: 3%;
 }
 .barra-lateral li {
   line-height: 10px;
