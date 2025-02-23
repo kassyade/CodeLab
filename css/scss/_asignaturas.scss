@@ -80,7 +80,10 @@ hr {border-color: #C678DD;}
         display: flex;
         align-items: center;
     }
-    .tit-asignatura {font-size: 90%;}
+    .tit-asignatura {
+        font-size: 90%;
+        color: white;
+    }
     .parr-gris {font-size: 70%;}
     .listado {
         display: flex;
