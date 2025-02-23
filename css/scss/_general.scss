@@ -1,12 +1,18 @@
-* {
+.general{
+    display: flex;
+    background-color: $fondo-negro;
+    color: $text-claro;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: $font-stack;
 }
 
-body {
-    display: flex;
-    background-color: $fondo-negro;
-    color: $text-claro;
+.curso-unidades {
+
+    max-width: $max-width;
+    margin-left: 20%;
+    margin-top: 8%;
+    text-align: justify;
+
 }

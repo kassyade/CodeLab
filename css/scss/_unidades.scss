@@ -6,6 +6,8 @@
   margin: 30px;
   margin-left: 300px;
 
+  margin-top: 18%;
+
   h2 {
     color: $color-principal;
     font-family: $font-stack;
@@ -23,6 +25,7 @@
       border-bottom: 1px solid $color-principal;
       color: $text-claro;
       font-family: $font-stack;
+      font-size: 14pt;
       transition: background 0.3s ease;
 
       &:last-child {
