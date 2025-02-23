@@ -38,6 +38,7 @@ div {
 }
 #contenedorPrincipal .formulario .input-field {
   background-color: #ffffff;
+  border-radius: 10px;
   margin-bottom: 20px;
   width: 100%;
 }

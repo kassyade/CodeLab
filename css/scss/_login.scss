@@ -48,6 +48,7 @@ div {
 
         .input-field {
             background-color: $blanco;
+            border-radius: 10px;
 
 
             .violeta{
@@ -65,9 +66,9 @@ div {
         
 
             input {
-
                 color: $blanco;
                 border-bottom: 1px solid $borde;
+
                 &:focus {
                     border-bottom: 1px solid $violeta;
                     box-shadow: 0 1px 0 0 $violeta;
