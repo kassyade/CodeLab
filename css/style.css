@@ -249,17 +249,29 @@ body {
 }
 
 @media (max-width: 768px) {
-  .lateral-global, .lateral {
+  .lateral {
+    display: none;
+  }
+  .barra-lateral {
     display: none;
   }
   .menu-btn {
     display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
   }
-  .main-content {
-    margin-left: calc(3% + 200px);
-    margin-top: 60px;
-    padding: 20px;
-    width: calc(97% - 200px);
+  .curso {
+    text-align: center;
+    padding: 10px;
+  }
+  .curso .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+  .jspc {
+    z-index: -1;
+    display: hidden;
   }
 }
 .unidades, .ejercicios {
@@ -453,5 +465,33 @@ body {
   #asignaturasMaterialize #idLogo5, #asignaturasMaterialize #idLogo6 {
     display: block !important;
     border: 1px solid white;
+  }
+}
+
+#jsMaterialize #lateral {
+  height: 720px;
+}
+#jsMaterialize #lateral ul {
+  line-height: 3.5;
+}
+#jsMaterialize #lateral ul i {
+  width: 20px;
+}
+#jsMaterialize nav .logo .logoImagen {
+  height: 60px !important;
+  padding: 5px !important;
+}
+#jsMaterialize h5 {
+  margin-left: 2%;
+}
+#jsMaterialize #lateral-gris {
+  height: 700px;
+}
+#jsMaterialize blockquote {
+  border-left: 5px solid #ba68c8 !important; /* Morado  */
+}
+@media (max-width: 750px) {
+  #jsMaterialize #lateral, #jsMaterialize #lateral-gris {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
