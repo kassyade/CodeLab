@@ -249,33 +249,17 @@ body {
 }
 
 @media (max-width: 768px) {
-<<<<<<< HEAD
   .lateral-global, .lateral {
-=======
-  .lateral {
-    display: none;
-  }
-  .barra-lateral {
->>>>>>> 6446bda7616ed97742bfcae975d1ddfd5af964e3
     display: none;
   }
   .menu-btn {
     display: block;
-    position: absolute;
-    top: 10px;
-    left: 10px;
   }
-  .curso {
-    text-align: center;
-    padding: 10px;
-  }
-  .curso .intro {
-    flex-direction: column;
-    text-align: center;
-  }
-  .jspc {
-    z-index: -1;
-    display: hidden;
+  .main-content {
+    margin-left: calc(3% + 200px);
+    margin-top: 60px;
+    padding: 20px;
+    width: calc(97% - 200px);
   }
 }
 .unidades, .ejercicios {
