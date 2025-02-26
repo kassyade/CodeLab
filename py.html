@@ -3,72 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso de JavaScript | CodeLab</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Curso Python</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script></head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <div class="general">
-        <header class="header-asignaturas">
-            <img class="logo" src="imagenes/LogoTN2.png" alt="Logo Code Lab">
-            <ul>
-                <li><i class="material-icons">brightness_medium</i></li>
-                <li><i class="material-icons">perm_identity</i></li>
-                <li><i class="material-icons">more_vert</i></li>
-            </ul>
-        </header>
+<body class="bodyJS">
 
-        <div class="barra-lateral">
-            <ul>
-                <li><i class="material-icons">menu</i></li>
-                <li><i class="material-icons">add</i></li>
-            </ul>
-            <ul>
-                <li><i class="material-icons">home</i></li>
-                <li><i class="material-icons">account_circle</i></li>
-                <li><i class="material-icons">event</i></li>
-                <li><i class="material-icons">help</i></li>
+    <nav class="header-global">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo left">
+                <img src="imagenes/LogoTN2.png" alt="LogoTN2" class="logo-header">
+            </a>
+            <ul class="right header-icons">
+                <li><a href="pythonClaro.html"><i class="material-icons">brightness_6</i></a></li>
+                <li><a href="#"><i class="material-icons hide-on-small-only">person</i></a></li>
+                <li><a href="asignaturasMaterialize.html"><i class="material-icons visible-on-small-only">home</i></a></li>
+                <li><a href="#"><i class="material-icons">more_vert</i></a></li>
             </ul>
         </div>
+    </nav>
 
-    <div class="lateral">
-        <ul>
-            <li class="seleccionada">Página de Inicio</li>
-            <li><a href="py-unidades.html">Contenidos</a></li>
-            <li><a href="py-foro.html">Foro</a></li>
-        </ul>
-    </div>
-    <div class="contenido">
-        <header class="header">
-        <header class="header">
-            <h2 class="hamb"> ☰ Python</h2>
-        </header>
-        <div class="curso">
-            <div class="intro">
-                <img src="./imagenes/python.png" alt="JavaScript Logo">
+    <div class="row rowjs">
+
+        <div class="col s0.5 menu-lateral-global hide-on-small-only">
+            <br><br><br>
+            <a><i class="material-icons">menu</i></a>
+            <a><i class="material-icons">add</i></a>
+            <a href="asignaturasMaterialize.html"><i class="material-icons">home</i></a>
+            <a><i class="material-icons">account_circle</i></a>
+            <a><i class="material-icons">calendar_month</i></a>
+            <a><i class="material-icons">help</i></a>
+        </div>
+
+        <div class="col s11 contenido">
+
+            <div class="row">
+                <div class="col s12">
+                    <nav class="header-secundario">
+                        <div class="nav-wrapper">
+                            <span class="brand-logo left"><a><i class="material-icons">menu</i></a>Python</span>
+                        </div>
+                    </nav>
+                </div>
             </div>
-            <h3>¡Bienvenido/a al Curso de Python!</h3>
-                <p>Descubre el poder de Python, uno de los lenguajes más versátiles y populares del mundo. Este curso te llevará desde lo más básico hasta técnicas avanzadas para que puedas desarrollar tus propios proyectos.</p>
-                <h3>¿Qué aprenderás en este curso?</h3>
-                <ul>
-                    <li>Conceptos esenciales: Variables, estructuras de control, funciones y más.</li>
-                    <li>Programación orientada a objetos: Aprende a crear y manejar clases y objetos en Python.</li>
-                    <li>Automatización y scripts: Facilita tareas repetitivas con Python.</li>
-                    <li>Proyectos prácticos: Aplica lo aprendido en desafíos y mini-proyectos.</li>
-                    <li>Acceso a recursos: Ejercicios interactivos, guías y material de apoyo.</li>
-                </ul>
-                <div><img class="jspc" src="./imagenes/py.png" alt=""></div>
-                <h3>¿Cómo empezar?</h3>
-                <ol>
-                    <li>Explora la introducción para conocer la plataforma y configurar tu entorno de trabajo.</li>
-                    <li>Sigue las lecciones en orden y resuelve los ejercicios propuestos.</li>
-                    <li>Practica constantemente para afianzar tus conocimientos.</li>
-                </ol>
-                <p class="consejo">Consejo: La mejor forma de aprender Python es programando. ¡Experimenta, comete errores y sigue adelante!</p>
+
+            <div class="row jsrow-Secundario">
+                <div class="col s2 menu-lateral-secundario hide-on-small-only">
+                    <div class="contenido-columna">
+                        <ul class="collection">
+                            <li class="collection-item seleccionada">
+                                <a href="python.html" class="waves-effect waves-light">
+                                    Página Principal
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="py-unidades.html" class="waves-effect waves-light">
+                                    Contenidos
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="py-foro.html" class="waves-effect waves-light">
+                                    Foro
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col s10 ml-20">
+                    <div class="row">
+                        <div class="col s12 center-align">
+                            <img src="imagenes/python.png" alt="Bienvenido a Python" class="responsive-img jspng">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12 m8 presentacion-texto">
+                            <h4>¡Bienvenido/a a tu Curso de Python! 🚀</h4>
+                            <p>
+                                Prepárate para dar un gran paso en tu camino como desarrollador/a. Este curso está diseñado para que domines Python desde los fundamentos hasta conceptos avanzados y te sientas seguro/a creando proyectos reales.
+                            </p>
+                            <h5>¿Qué te espera en este curso?</h5>
+                            <ul>
+                                <li><strong>Lecciones dinámicas:</strong> Aprende paso a paso con explicaciones claras y ejemplos prácticos.</li>
+                                <li><strong>Proyectos prácticos:</strong> Pon a prueba tus conocimientos construyendo aplicaciones y scripts útiles.</li>
+                                <li><strong>Recursos adicionales:</strong> Ejercicios, guías y tips para seguir aprendiendo incluso después del curso.</li>
+                                <li><strong>Soporte continuo:</strong> Si tienes dudas, nuestra comunidad y mentores están aquí para ayudarte.</li>
+                            </ul>
+                            <h5>¿Por dónde empezar?</h5>
+                            <ul>
+                                <li>Revisa el módulo introductorio para familiarizarte con la plataforma y configurar tu entorno de desarrollo.</li>
+                                <li>Dedica tiempo a cada lección y practica con los ejercicios sugeridos.</li>
+                                <li>Avanza a tu ritmo: el contenido está disponible cuando lo necesites.</li>
+                            </ul>
+                            <p>
+                                💡 <strong>Consejo:</strong> La clave para aprender Python es practicar. No te preocupes si algo no te sale al principio; ¡es parte del proceso!
+                            </p>
+                        </div>
+                        <div class="col s4 hide-on-small-only">
+                            <img src="imagenes/py.png" alt="Imagen decorativa" class="responsive-img jspc">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
 </body>
 </html>

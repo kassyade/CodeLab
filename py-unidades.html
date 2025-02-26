@@ -3,69 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso de Python | CodeLab</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Curso Python</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="bodyJS">
 
-    <header class="header-asignaturas">
-        <img class="logo" src="imagenes/LogoTN2.png" alt="Logo Code Lab">
-        <ul>
-            <li><i class="material-icons">brightness_medium</i></li>
-            <li><i class="material-icons">perm_identity</i></li>
-            <li><i class="material-icons">more_vert</i></li>
-        </ul>
-    </header>
+    <nav class="header-global">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo left">
+                <img src="imagenes/LogoTN2.png" alt="LogoTN2" class="logo-header">
+            </a>
+            <ul class="right header-icons">
+                <li><a href="#"><i class="material-icons">brightness_6</i></a></li>
+                <li><a href="#"><i class="material-icons">person</i></a></li>
+                <li><a href="#"><i class="material-icons">more_vert</i></a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="barra-lateral">
-        <ul>
-            <li><i class="material-icons">menu</i></li>
-            <li><i class="material-icons">add</i></li>
-        </ul>
-        <ul>
-            <li><i class="material-icons">home</i></li>
-            <li><i class="material-icons">account_circle</i></li>
-            <li><i class="material-icons">event</i></li>
-            <li><i class="material-icons">help</i></li>
-        </ul>
+    <div class="row rowjs">
+
+        <div class="col s0.5 menu-lateral-global hide-on-small-only">
+            <br><br><br>
+            <a><i class="material-icons">menu</i></a>
+            <a><i class="material-icons">add</i></a>
+            <a href="asignaturasMaterialize.html"><i class="material-icons">home</i></a>
+            <a><i class="material-icons">account_circle</i></a>
+            <a><i class="material-icons">calendar_month</i></a>
+            <a><i class="material-icons">help</i></a>
+        </div>
+
+        <div class="col s11 contenido">
+
+            <div class="row">
+                <div class="col s12">
+                    <nav class="header-secundario">
+                        <div class="nav-wrapper">
+                            <span class="brand-logo left"><a><i class="material-icons">menu</i></a>Python</span>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row jsrow-Secundario">
+                <div class="col s2 menu-lateral-secundario hide-on-small-only">
+                    <div class="contenido-columna">
+                        <ul class="collection">
+                            <li class="collection-item seleccionada">
+                                <a href="py.html" class="waves-effect waves-light">
+                                    Página Principal
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="py-unidades.html" class="waves-effect waves-light">
+                                    Contenidos
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="py-foro.html" class="waves-effect waves-light">
+                                    Foro
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col s10 unidades">
+                    <ul class="collapsible expandable">
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Unidades</div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li>Unidad 1: Introducción a Python</li>
+                                    <li>Unidad 2: Fundamentos del Lenguaje</li>
+                                    <li>Unidad 3: Funciones y Estructuras de Control</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Ejercicios</div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li>Generador de Números Aleatorios</li>
+                                    <li>Buscador en una Lista</li>
+                                    <li>Generador de Colores Aleatorios</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="lateral">
-        <ul>
-            <li><a href="py.html">Página Inicio</a></li>
-            <li class="seleccionada">Contenidos</li>
-            <li><a href="py-foro.html">Foro</a></li>
-        </ul>
-    </div>
-
-    <div class="contenido">
-
-        <header class="header">
-            <h2 class="hamb"> ☰ Python</h2>
-        </header>
-        <div class="curso-unidades">
-            <section class="unidades">
-                <h2>Unidades</h2>
-                <ul>
-                    <li>Unidad 1: Introducción a Python</li>
-                    <li>Unidad 2: Fundamentos del Lenguaje</li>
-                    <li>Unidad 3: Funciones y Módulos</li>
-                </ul>
-            </section>
-        
-            <section class="ejercicios">
-                <h2>Ejercicios</h2>
-                <ul>
-                    <li>Calculadora Básica</li>
-                    <li>Manipulación de Listas</li>
-                    <li>Generador de Contraseñas Aleatorias</li>
-                </ul>
-            </section>
-        </div>   
-    </div>       
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let elems = document.querySelectorAll('.collapsible.expandable');
+            let instances = M.Collapsible.init(elems, {
+                accordion: false 
+            });
+        });
+    </script>
 </body>
 </html>
