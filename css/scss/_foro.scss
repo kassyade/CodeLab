@@ -1,99 +1,38 @@
 
-.foro{
-
-  position: fixed;
-  top: 14%;
-  left: 20%;
-}
-.debates {
-  background-color: $color-secondario;
-  padding: 10px;
-  border-radius: 5px;
-  width: 100%;
-  margin: 30px;
-  margin-left: 300px;
-
-  h2 {
-    color: $color-principal;
-    font-family: $font-stack;
-    text-align: left;
-    padding-bottom: 5px;
-    border-bottom: 2px solid $color-principal;
-  }
-
-
-  ul {
-    list-style: none;
-    padding: 0;
-
-    li {
-      padding: 8px;
-      border-bottom: 1px solid $color-principal;
-      color: $text-claro;
-      font-family: $font-stack;
-      transition: background 0.3s ease;
-      font-size: 14pt;
-
-      &:last-child {
-        border-bottom: none;
-      }
-
-      &:hover {
-        background: lighten($color-secondario, 10%);
-        cursor: pointer;
-      }
-    }
-  }
-}
-
-.foro-discusion {
-  margin: 20px auto;
-  width: 100%;
-  padding: 20px;
-  border-radius: 5px;
-  border: 2px dashed $color-secondario;
-  position: relative;
-  height: 200px;
+.collapsible-body-nube {
+  background-color: #737272;
+  padding: 15px;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  margin-left: 300px;
-
-  &__vacio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    img {
-      max-width: 80px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      color: $text-claro;
-      font-size: 1em;
-    }
-  }
-  .nuevo{
-
-    color:$color-principal;
-    font-weight: bold;
-    text-decoration: underline;
-  }
+  height: 100%; 
 }
-.foro-cuenta-regresiva{
 
 
-  position: fixed;
-  left: 35%;
-  top: 76%;
 
-  iframe{
+.card.transparent.striped-border.tarjeta-nube {
+  background-color: transparent !important; 
+  border: 2px dashed white;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  text-align: justify;
 
-    position: fixed;
-    right: 36%;
-
+  .nube {
+      max-width: 150px;
+      margin-bottom: 15px; 
   }
 
+  p {
+      color: $text-claro;
+      margin: 10px 0; 
+  }
+
+  .fuerte {
+      font-weight: bold;
+      color: $color-principal;
+      text-decoration: underline;
+  }
 }

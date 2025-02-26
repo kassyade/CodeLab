@@ -489,88 +489,37 @@ body {
   margin: 0;
 }
 
-.foro {
-  position: fixed;
-  top: 14%;
-  left: 20%;
-}
-
-.debates {
-  background-color: #464646;
-  padding: 10px;
-  border-radius: 5px;
-  width: 100%;
-  margin: 30px;
-  margin-left: 300px;
-}
-.debates h2 {
-  color: #ab80d7;
-  font-family: Arial, sans-serif;
-  text-align: left;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #ab80d7;
-}
-.debates ul {
-  list-style: none;
-  padding: 0;
-}
-.debates ul li {
-  padding: 8px;
-  border-bottom: 1px solid #ab80d7;
-  color: #eee;
-  font-family: Arial, sans-serif;
-  transition: background 0.3s ease;
-  font-size: 14pt;
-}
-.debates ul li:last-child {
-  border-bottom: none;
-}
-.debates ul li:hover {
-  background: #606060;
-  cursor: pointer;
-}
-
-.foro-discusion {
-  margin: 20px auto;
-  width: 100%;
-  padding: 20px;
-  border-radius: 5px;
-  border: 2px dashed #464646;
-  position: relative;
-  height: 200px;
+.collapsible-body-nube {
+  background-color: #737272;
+  padding: 15px;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  margin-left: 300px;
-}
-.foro-discusion__vacio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.foro-discusion__vacio img {
-  max-width: 80px;
-  margin-bottom: 10px;
-}
-.foro-discusion__vacio p {
-  color: #eee;
-  font-size: 1em;
-}
-.foro-discusion .nuevo {
-  color: #ab80d7;
-  font-weight: bold;
-  text-decoration: underline;
+  height: 100%;
 }
 
-.foro-cuenta-regresiva {
-  position: fixed;
-  left: 35%;
-  top: 76%;
+.card.transparent.striped-border.tarjeta-nube {
+  background-color: transparent !important;
+  border: 2px dashed white;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  text-align: justify;
 }
-.foro-cuenta-regresiva iframe {
-  position: fixed;
-  right: 36%;
+.card.transparent.striped-border.tarjeta-nube .nube {
+  max-width: 150px;
+  margin-bottom: 15px;
+}
+.card.transparent.striped-border.tarjeta-nube p {
+  color: #eee;
+  margin: 10px 0;
+}
+.card.transparent.striped-border.tarjeta-nube .fuerte {
+  font-weight: bold;
+  color: #ab80d7;
+  text-decoration: underline;
 }
 
 #asignaturasMaterialize #lateral {
