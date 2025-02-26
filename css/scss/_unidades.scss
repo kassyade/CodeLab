@@ -1,47 +1,46 @@
 
 
-// Estilos para los encabezados de los desplegables
+
 .collapsible-header {
-    background-color: $color-secondario; // Color principal para el encabezado
-    color: $text-claro; // Texto en blanco
-    font-size: 1.2em; // Tamaño de la fuente
-    padding: 15px; // Espaciado interno
+    background-color: $color-secondario;
+    color: $text-claro;
+    font-size: 1.2em;
+    padding: 15px; 
     display: flex;
     align-items: center;
 
     i.material-icons {
-        margin-right: 10px; // Espacio entre el ícono y el texto
+        margin-right: 10px; 
     }
 }
 
-// Estilos para el cuerpo de los desplegables
+
 .collapsible-body {
-    background-color: #737272; // Fondo del menú
-    padding: 15px; // Espaciado interno
+    background-color: #737272; 
+    padding: 15px; 
     ul {
-        list-style-type: none; // Quitar viñetas de la lista
+        list-style-type: none; 
         padding: 0;
         margin: 0;
 
         li {
-            padding: 10px 0; // Espaciado entre elementos de la lista
-            font-size: 1.1em; // Tamaño de la fuente
-            color: $text-claro; // Texto claro
+            padding: 10px 0; 
+            font-size: 1.1em; 
+            color: $text-claro; 
             border-bottom: 1px solid $color-principal;
 
             &:last-child {
-                border-bottom: none; // Quitar borde del último elemento
+                border-bottom: none; 
             }
         }
     }
 }
 
-// Estilos para el hover y estado activo
+
 .collapsible-header:hover {
-    background-color: darken($color-principal, 10%); // Color más oscuro al pasar el ratón
+    background-color: darken($color-principal, 10%);
 }
 
-// Permitir que ambos desplegables se abran a la vez
 .collapsible.popout {
     border: none;
     box-shadow: none;
