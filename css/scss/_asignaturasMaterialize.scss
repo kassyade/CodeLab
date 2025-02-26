@@ -56,12 +56,12 @@
     .div-lista {
         column-gap: 25px !important;
     }
+    h5, h6, p {
+        color: white;
+    }
 
     @media (max-width:750px) {
         #user {
-            display: none;
-        }
-        .asignaturas-barra-lateral {
             display: none;
         }
         #idLogo1, #idLogo2 {
