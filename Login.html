@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <title>CodeLab Login</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>CodeLab Login</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<link rel="stylesheet" href="./css/style.css">
 </head>
-<body id="idLogin" class="black">
-    <div id="contenedorPrincipal">
-        <div class="formulario">
-            <img src="imagenes/LogoTN2.png" class="logo">
-                <div class="input-field">
-                    <input  type="email" class="email"  placeholder="  Email"  >
-                    <label for="contrasena">Email <span  class="violeta"  >*</span> </label>
-                </div>
-                <div class="input-field">
-                    <input  type="password" class="contraseña"  placeholder="  Contraseña">
-                    <label for="interiorSeason">Contraseña  <span class="violeta" >*</span></label>
-                </div>
-                <div class="olvido">¿Olvidaste tu contraseña?</div>
-                <form action="asignaturasMaterialize.html" method="get">
-                    <button type="submit" class="btn">Iniciar sesión</button>
-                </form>
-                <button type="submit" class="btn btn-invitado">Entrar como invitado </button>
-
-        </div>
+<body>
+    <div class="container">
+        <img src="imagenes/LogoTN2.png" alt="Logo" class="responsive-img" style="max-height: 70px;">
+        <form action="asignaturasMaterialize.html" method="get">
+            <div class="input-field">
+                <input id="email" type="email" class="validate" required>
+                <label for="email">Email <span class="purple-text">*</span></label>
+            </div>
+            <div class="input-field">
+                <input id="password" type="password" class="validate" required>
+                <label for="password">Contraseña <span class="purple-text">*</span></label>
+            </div>
+            <p class="left-align">
+                <a href="#" class="white-text">¿Olvidaste tu contraseña?</a>
+            </p>
+            <button type="submit" class="btn btn-custom waves-effect waves-light"><a href="asignaturasMaterialize.html">Iniciar sesión</a></button>
+        </form>
+        <button class="btn btn-invitado waves-effect waves-light" style="margin-top: 10px;">Entrar como invitado</button>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
