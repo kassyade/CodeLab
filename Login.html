@@ -6,26 +6,26 @@
     <title>CodeLab Login</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="login-page">
-    <div class="container">
-        <img src="imagenes/LogoTN2.png" alt="Logo" class="responsive-img" style="max-height: 70px;">
+<body id="login-page">
+    <div id="container">
+        <img src="imagenes/LogoTN2.png" alt="Logo" id="logo" class="responsive-img" style="max-height: 70px;">
         <form action="asignaturasMaterialize.html" method="get">
-            <div class="input-field">
+            <div id="email-field" class="input-field">
                 <input id="email" type="email" class="validate" required>
                 <label for="email">Email <span class="purple-text">*</span></label>
             </div>
-            <div class="input-field">
+            <div id="password-field" class="input-field">
                 <input id="password" type="password" class="validate" required>
                 <label for="password">Contraseña <span class="purple-text">*</span></label>
             </div>
-            <p class="left-align">
-                <a href="#" class="white-text">¿Olvidaste tu contraseña?</a>
+            <p id="forgot-password" class="left-align">
+                <a href="#" id="forgot-link" class="white-text">¿Olvidaste tu contraseña?</a>
             </p>
-            <button type="submit" class="btn btn-custom waves-effect waves-light"><a href="asignaturasMaterialize.html">Iniciar sesión</a></button>
+            <button type="submit" id="submit-btn" class="btn waves-effect waves-light"><a href="asignaturasMaterialize.html" id="login-link">Iniciar sesión</a></button>
         </form>
-        <button class="btn btn-invitado waves-effect waves-light" style="margin-top: 10px;">Entrar como invitado</button>
+        <button id="guest-btn" class="btn waves-effect waves-light" style="margin-top: 10px;">Entrar como invitado</button>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
