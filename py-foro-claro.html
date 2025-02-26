@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Python</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bodyJS white">
+
+    <nav class="header-global pink lighten-3">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo left">
+                <img src="imagenes/LogoTN2.png" alt="LogoTN2" class="logo-header">
+            </a>
+            <ul class="right header-icons">
+                <li><a href="py-foro.html"><i class="material-icons">brightness_6</i></a></li>
+                <li><a href="#"><i class="material-icons hide-on-small-only">person</i></a></li>
+                <li><a href="asignaturasClaro.html"><i class="material-icons visible-on-small-only">home</i></a></li>
+                <li><a href="#"><i class="material-icons">more_vert</i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row rowjs">
+        <div class="col s0.5 menu-lateral-global hide-on-small-only pink lighten-3">
+            <br><br><br>
+            <a><i class="material-icons white-text">menu</i></a>
+            <a><i class="material-icons white-text">add</i></a>
+            <a href="asignaturasClaro.html"><i class="material-icons white-text">home</i></a>
+            <a><i class="material-icons white-text">account_circle</i></a>
+            <a><i class="material-icons white-text">calendar_month</i></a>
+            <a><i class="material-icons white-text">help</i></a>
+        </div>
+
+        <div class="col s11 contenido">
+
+            <div class="row">
+                <div class="col s12">
+                    <nav class="header-secundario white">
+                        <div class="nav-wrapper">
+                            <span class="brand-logo left black-text"><a><i class="material-icons black-text">menu</i></a>Python</span>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row jsrow-Secundario">
+                <div class="col s2 menu-lateral-secundario hide-on-small-only pink lighten-2">
+                    <div class="contenido-columna">
+                        <ul class="collection">
+                            <li class="collection-item ">
+                                <a href="py-claro.html" class="waves-effect waves-light">
+                                    Página Principal
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="py-unidades-claro.html" class="waves-effect waves-light">
+                                    Contenidos
+                                </a>
+                            </li>
+                            <li class="collection-item seleccionada">
+                                <a href="py-foro-claro.html" class="waves-effect waves-light">
+                                    Foro
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col s10 unidades">
+                    <ul class="collapsible expandable">
+                        <li>
+                            <div class="collapsible-header pink lighten-2"><i class="material-icons">arrow_drop_down</i>Foros de discusión fijados</div>
+                            <div class="collapsible-body pink lighten-3">
+                                <ul>
+                                    <li>Debates Generales <i class="material-icons">arrow_right</i></li>
+                                </ul>
+                            </div>
+                        </li>
+                
+                        <li>
+                            <div class="collapsible-header pink lighten-2"><i class="material-icons">arrow_drop_down</i>Foros de discusión</div>
+                            <div class="collapsible-body-nube pink lighten-3"> 
+                                <div class="card transparent striped-border tarjeta-nube">
+                                    <div class="card-content center-align">
+                                        <img src="imagenes/nube.png" alt="Nube" class="responsive-img nube"><br>
+                                        <p>No hay foros de discusión que mostrar en esta sección</p>
+                                        <p class="fuerte">Haz clic aquí para añadir un foro de discusión</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="row center-align row-iframe">
+                        <div class="col s12">
+                            <iframe src="https://free.timeanddate.com/countdown/i9s849va/n141/cf12/cm0/cu4/ct0/cs0/ca0/co1/cr0/ss0/cacab80d7/cpcab80d7/pc464646/tcfff/fs120/szw320/szh135/tatDebate%20Especial%20En/tacab80d7/tptDebate%20Especial%20hace/tpcab80d7/iso2025-02-28T11:00:00" 
+                                    allowtransparency="true" 
+                                    frameborder="0" 
+                                    width="203" 
+                                    height="58">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let elems = document.querySelectorAll('.collapsible.expandable');
+            let instances = M.Collapsible.init(elems, {
+                accordion: false 
+            });
+        });
+    </script>
+</body>
+</html>
