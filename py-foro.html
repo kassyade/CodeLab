@@ -3,77 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso de Python | CodeLab</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Curso Python</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header class="header-asignaturas">
-        <img class="logo" src="imagenes/LogoTN2.png" alt="Logo Code Lab">
-        <ul>
-            <li><i class="material-icons">brightness_medium</i></li>
-            <li><i class="material-icons">perm_identity</i></li>
-            <li><i class="material-icons">more_vert</i></li>
-        </ul>
-    </header>
+<body class="bodyJS">
 
-    <div class="barra-lateral">
-        <ul>
-            <li><i class="material-icons">menu</i></li>
-            <li><i class="material-icons">add</i></li>
-        </ul>
-        <ul>
-            <li><i class="material-icons">home</i></li>
-            <li><i class="material-icons">account_circle</i></li>
-            <li><i class="material-icons">event</i></li>
-            <li><i class="material-icons">help</i></li>
-        </ul>
-    </div>
+    <nav class="header-global">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo left">
+                <img src="imagenes/LogoTN2.png" alt="LogoTN2" class="logo-header">
+            </a>
+            <ul class="right header-icons">
+                <li><a href="#"><i class="material-icons">brightness_6</i></a></li>
+                <li><a href="#"><i class="material-icons">person</i></a></li>
+                <li><a href="#"><i class="material-icons">more_vert</i></a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="lateral">
-        <ul>
-            <li><a href="py.html">Página de Inicio</a></li>
-            <li><a href="py-unidades.html">Contenidos</a></li>
-            <li class="seleccionada">Foro</li>
-        </ul>
-    </div>
+    <div class="row rowjs">
+        <div class="col s0.5 menu-lateral-global hide-on-small-only">
+            <br><br><br>
+            <a><i class="material-icons">menu</i></a>
+            <a><i class="material-icons">add</i></a>
+            <a href="asignaturasMaterialize.html"><i class="material-icons">home</i></a>
+            <a><i class="material-icons">account_circle</i></a>
+            <a><i class="material-icons">calendar_month</i></a>
+            <a><i class="material-icons">help</i></a>
+        </div>
 
-    <div class="contenido">
+        <div class="col s11 contenido">
 
-        <header class="header">
-            <h2 class="hamb">☰ Python</h2>
-        </header>
-      
-        <div class="curso">
-
-            <div class="foro">
-                <div class="debates">
-                    <h2>Debates Generales</h2>
-
-                    <ul>
-                        <li>¿Cuál es la mejor forma de aprender Python?</li>
-                        <li>Comparte tu experiencia con el curso</li>
-                        <li>Resuelve dudas sobre proyectos en Python</li>
-                    </ul>
+            <div class="row">
+                <div class="col s12">
+                    <nav class="header-secundario">
+                        <div class="nav-wrapper">
+                            <span class="brand-logo left"><a><i class="material-icons">menu</i></a>Python</span>
+                        </div>
+                    </nav>
                 </div>
+            </div>
 
-                <div class="foro-discusion">
-                    <div class="foro-discusion__vacio">
-                        <img src="imagenes/nube.png" alt="Sin mensajes">
-                        <p>Por el momento no hay mensajes</p>
-                        <p class="nuevo">Haz click para añadir una discusión en el foro</p>
+            <div class="row jsrow-Secundario">
+                <div class="col s2 menu-lateral-secundario hide-on-small-only">
+                    <div class="contenido-columna">
+                        <ul class="collection">
+                            <li class="collection-item ">
+                                <a href="py.html" class="waves-effect waves-light">
+                                    Página Principal
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="py-unidades.html" class="waves-effect waves-light">
+                                    Contenidos
+                                </a>
+                            </li>
+                            <li class="collection-item seleccionada">
+                                <a href="py-foro.html" class="waves-effect waves-light">
+                                    Foro
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+                <div class="col s10 unidades">
+                    <ul class="collapsible expandable">
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Foros de discusión fijados</div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li>Debates Generales <i class="material-icons">arrow_right</i></li>
+                                </ul>
+                            </div>
+                        </li>
+                
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Foros de discusión</div>
+                            <div class="collapsible-body-nube"> 
+                                <div class="card transparent striped-border tarjeta-nube">
+                                    <div class="card-content center-align">
+                                        <img src="imagenes/nube.png" alt="Nube" class="responsive-img nube"><br>
+                                        <p>No hay foros de discusión que mostrar en esta sección</p>
+                                        <p class="fuerte">Haz clic aquí para añadir un foro de discusión</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="row center-align row-iframe">
+                        <div class="col s12">
+                            <iframe src="https://free.timeanddate.com/countdown/i9s849va/n141/cf12/cm0/cu4/ct0/cs0/ca0/co1/cr0/ss0/cacab80d7/cpcab80d7/pc464646/tcfff/fs120/szw320/szh135/tatDebate%20Especial%20En/tacab80d7/tptDebate%20Especial%20hace/tpcab80d7/iso2025-02-28T11:00:00" 
+                                    allowtransparency="true" 
+                                    frameborder="0" 
+                                    width="203" 
+                                    height="58">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-
-            <div class="foro-cuenta-regresiva">
-                <h3>Cuenta Regresiva para el Debate Especial</h3>
-                <iframe src="https://free.timeanddate.com/countdown/i9s0j5sv/n141/cf12/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cacab80d7/cpcab80d7/pc333/tcfff/fs100/szw320/szh135/tatDebate%20Especial%20empieza%20en/tacab80d7/tptEl%20debate%20especial%20acabo%20en/tpcab80d7/macab80d7/mpcab80d7/iso2025-02-26T00:00:00/pd2" allowtransparency="true" frameborder="0" width="248" height="69"></iframe>
-            </div>
-            
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let elems = document.querySelectorAll('.collapsible.expandable');
+            let instances = M.Collapsible.init(elems, {
+                accordion: false 
+            });
+        });
+    </script>
 </body>
 </html>
