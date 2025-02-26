@@ -8,6 +8,9 @@
             }
         }
     }
+    .menu-scss {
+        background-color: $color-barras !important;
+    }
 
     nav .logo .logoImagen {
         height: 60px !important;
@@ -138,9 +141,6 @@
 
     @media (max-width:750px) {
         #user {
-            display: none;
-        }
-        .asignaturas-barra-lateral {
             display: none;
         }
         #idLogo1, #idLogo2 {

@@ -76,7 +76,7 @@
 
 .menu-lateral-global {
   background-color: #282C34;
-  height: 100vh;
+  height: 1680px;
   padding: 20px 0;
   display: flex;
   flex-direction: column;
@@ -346,7 +346,7 @@ body {
 
 .menu-lateral-secundario {
   background-color: #464646;
-  height: 84.2vh;
+  height: 1534px;
   margin: 0;
   padding: 0;
   position: relative;
@@ -531,6 +531,9 @@ body {
 #asignaturasMaterialize #lateral ul i {
   width: 20px;
 }
+#asignaturasMaterialize .menu-scss {
+  background-color: #282C34 !important;
+}
 #asignaturasMaterialize nav .logo .logoImagen {
   height: 60px !important;
   padding: 5px !important;
@@ -651,9 +654,6 @@ body {
 }
 @media (max-width: 750px) {
   #asignaturasClaro #user {
-    display: none;
-  }
-  #asignaturasClaro .asignaturas-barra-lateral {
     display: none;
   }
   #asignaturasClaro #idLogo1, #asignaturasClaro #idLogo2 {
