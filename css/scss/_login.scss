@@ -30,4 +30,63 @@
 
 #submit-btn.waves-effect.waves-light {
     color: white;
+}/* Estilo para el modo claro */
+#login-dia-page {
+    background-color: #F5EFEB; /* Fondo claro */
+    color: black; /* Texto oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#login-dia-container {
+    background-color: #F48FB1; /* Fondo del contenedor */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+#login-dia-email-field label,
+#login-dia-password-field label {
+    color: white; /* Color de los label en blanco */
+}
+
+#login-dia-email,
+#login-dia-password {
+    color: white; /* Texto dentro de los inputs en blanco */
+    background-color: transparent; /* Fondo transparente para los inputs */
+}
+
+#login-dia-email:focus,
+#login-dia-password:focus {
+    border: 1px solid #C08FF7; /* Borde morado al enfocar */
+}
+
+#login-dia-submit-btn {
+    background-color: #C08FF7; /* Color del botón */
+}
+
+#login-dia-guest-btn {
+    color: white;
+    background-color: #C08FF7; /* Color del botón de invitado */
+}
+
+#login-dia-submit-btn.waves-effect.waves-light {
+    color: white;
+}
+
+#login-dia-email-field,
+#login-dia-password-field {
+    margin-bottom: 20px;
+}
+
+#login-dia-forgot-password {
+    color: #567CBD; /* Color del enlace de olvido de contraseña */
+}
+
+#login-dia-submit-btn a {
+    color: white;
 }
