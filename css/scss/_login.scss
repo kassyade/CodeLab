@@ -1,229 +1,32 @@
-// Variables
-$fondo: #1E1E1E;
-$fondoFormulario: #464646;
-$borde: #ffffff;
-$blanco: #ffffff;
-$violeta: #C08FF7;
-$azul:rgb(82, 82, 158);
-
 body {
-    //background-color: $fondo;
-    //color: $blanco;
-    font-family: Arial, sans-serif;
+    background-color: #1E1E1E;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-
-// div {
-//     background-color: $fondo;
-// }
-
-#contenedorPrincipal {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
+.container {
+    background-color: #464646;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
     width: 100%;
-    min-height: 100vh;
-
-    .logo {
-        height: 70px;
-        margin-bottom: 20px;
-        background-repeat: no-repeat;
-    }
-
-    .formulario {
-        grid-row: 2/3;
-        grid-column: 2/3;
-        border: 1px solid $borde;
-        border-radius: 15px;
-        background-color: $fondoFormulario;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-
-        .olvido{
-            background-color: $fondoFormulario;
-        }
-
-        .input-field {
-            background-color: $blanco;
-            border-radius: 10px;
-
-
-            .violeta{
-                color: $violeta;
-            }
- 
-
-            margin-bottom: 20px;
-            width: 100%;
-            label {
-                top: -20px; /* Ajusta la posición del label */
-                font-size: 1.5rem;
-                color: $blanco;
-            }
-        
-
-            input {
-                color: black;
-                border-bottom: 1px solid $borde;
-
-                &:focus {
-                    border-bottom: 1px solid $violeta;
-                    box-shadow: 0 1px 0 0 $violeta;
-                }
-            }
-        }
-
-        .btn {
-            background-color: $violeta;
-            color: $blanco;
-            margin-top: 10px;
-            &:hover {
-                background-color: darken($violeta, 10%);
-            }
-        }
-        .btn-invitado {
-            @extend .btn;
-            background-color: $azul;
-            color: $blanco;
-            &:hover {
-                background-color: darken($azul, 10%);
-            }
-        }
-        .olvido {
-            text-decoration: underline;
-            text-align: left;
-            width: 100%;  
-            margin-top: -10px;
-            margin-bottom: 20px;
-            padding-left: 5px; 
-        }
-        
-        
-    }
+    max-width: 400px;
 }
-@media (max-width: 600px) {
-    #contenedorPrincipal {
-        padding: 0;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+.btn-custom {
+    a{
+        color: white;
 
-        .formulario {
-            grid-row: 1/3;
-            grid-column: 1/3;
-        }
-
-        .titulo {
-            font-size: 30px;
-
-            .violeta {
-                font-size: 32px;
-            }
-        }
     }
+    background-color: #C08FF7;
+
 }
-#contenedorPrincipalLoginClaro {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
-    width: 100%;
-    min-height: 100vh;
+.btn-invitado {
+    color: white;
 
-    .logo {
-        height: 70px;
-        margin-bottom: 20px;
-        background-repeat: no-repeat;
-    }
-
-    .formulario {
-        grid-row: 2/3;
-        grid-column: 2/3;
-        border: 1px solid $borde;
-        border-radius: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-
-
-        .input-field {
-            background-color: $blanco;
-            border-radius: 10px;
-
-
-            .violeta{
-                color: $violeta;
-            }
- 
-
-            margin-bottom: 20px;
-            width: 100%;
-            label {
-                top: -20px; /* Ajusta la posición del label */
-                font-size: 1.5rem;
-                color: $blanco;
-            }
-        
-
-            input {
-                color: black;
-                border-bottom: 1px solid $borde;
-
-                &:focus {
-                    border-bottom: 1px solid $violeta;
-                    box-shadow: 0 1px 0 0 $violeta;
-                }
-            }
-        }
-
-        .btn {
-            background-color: $violeta;
-            color: $blanco;
-            margin-top: 10px;
-            &:hover {
-                background-color: darken($violeta, 10%);
-            }
-        }
-        .btn-invitado {
-            @extend .btn;
-            background-color: $azul;
-            color: $blanco;
-            &:hover {
-                background-color: darken($azul, 10%);
-            }
-        }
-        .olvido {
-            text-decoration: underline;
-            text-align: left;
-            width: 100%;  
-            margin-top: -10px;
-            margin-bottom: 20px;
-            padding-left: 5px; 
-            color: $azul;
-        }
-        
-        
-    }
-    @media (max-width: 600px) {
-        #contenedorPrincipalLoginClaro {
-            padding: 0;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-    
-            .formulario {
-                grid-row: 1/3;
-                grid-column: 1/3;
-            }
-    
-            .titulo {
-                font-size: 30px;
-    
-                .violeta {
-                    font-size: 32px;
-                }
-            }
-        }
-    }
+    background-color: rgb(82, 82, 158);
+}
+.btn btn-custom waves-effect waves-light{
+    color: white;
 }
