@@ -100,8 +100,6 @@
 }
 
 body {
-  background-color: #1E1E1E;
-  color: #ffffff;
   font-family: Arial, sans-serif;
 }
 
@@ -147,7 +145,7 @@ body {
   color: #ffffff;
 }
 #contenedorPrincipal .formulario .input-field input {
-  color: #ffffff;
+  color: black;
   border-bottom: 1px solid #ffffff;
 }
 #contenedorPrincipal .formulario .input-field input:focus {
@@ -195,6 +193,93 @@ body {
     font-size: 32px;
   }
 }
+#contenedorPrincipalLoginClaro {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+  width: 100%;
+  min-height: 100vh;
+}
+#contenedorPrincipalLoginClaro .logo {
+  height: 70px;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+}
+#contenedorPrincipalLoginClaro .formulario {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+#contenedorPrincipalLoginClaro .formulario .input-field {
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+#contenedorPrincipalLoginClaro .formulario .input-field .violeta {
+  color: #C08FF7;
+}
+#contenedorPrincipalLoginClaro .formulario .input-field label {
+  top: -20px; /* Ajusta la posición del label */
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+#contenedorPrincipalLoginClaro .formulario .input-field input {
+  color: black;
+  border-bottom: 1px solid #ffffff;
+}
+#contenedorPrincipalLoginClaro .formulario .input-field input:focus {
+  border-bottom: 1px solid #C08FF7;
+  box-shadow: 0 1px 0 0 #C08FF7;
+}
+#contenedorPrincipalLoginClaro .formulario .btn, #contenedorPrincipalLoginClaro .formulario .btn-invitado {
+  background-color: #C08FF7;
+  color: #ffffff;
+  margin-top: 10px;
+}
+#contenedorPrincipalLoginClaro .formulario .btn:hover, #contenedorPrincipalLoginClaro .formulario .btn-invitado:hover {
+  background-color: #a55ff4;
+}
+#contenedorPrincipalLoginClaro .formulario .btn-invitado {
+  background-color: rgb(82, 82, 158);
+  color: #ffffff;
+}
+#contenedorPrincipalLoginClaro .formulario .btn-invitado:hover {
+  background-color: #41417c;
+}
+#contenedorPrincipalLoginClaro .formulario .olvido {
+  text-decoration: underline;
+  text-align: left;
+  width: 100%;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  padding-left: 5px;
+  color: rgb(82, 82, 158);
+}
+@media (max-width: 600px) {
+  #contenedorPrincipalLoginClaro #contenedorPrincipalLoginClaro {
+    padding: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  #contenedorPrincipalLoginClaro #contenedorPrincipalLoginClaro .formulario {
+    grid-row: 1/3;
+    grid-column: 1/3;
+  }
+  #contenedorPrincipalLoginClaro #contenedorPrincipalLoginClaro .titulo {
+    font-size: 30px;
+  }
+  #contenedorPrincipalLoginClaro #contenedorPrincipalLoginClaro .titulo .violeta {
+    font-size: 32px;
+  }
+}
+
 .header {
   background-color: #121212;
   padding: 10px;
