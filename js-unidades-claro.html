@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bodyJSClaro white">
+<body class="bodyJS white">
 
     <nav class="header-global pink lighten-3">
         <div class="nav-wrapper">
@@ -17,7 +17,7 @@
                 <img src="imagenes/LogoTN2.png" alt="LogoTN2" class="logo-header">
             </a>
             <ul class="right header-icons">
-                <li><a href="js.html"><i class="material-icons">brightness_6</i></a></li>
+                <li><a href="js-unidades.html"><i class="material-icons">brightness_6</i></a></li>
                 <li><a href="#"><i class="material-icons hide-on-small-only">person</i></a></li>
                 <li><a href="asignaturasClaro.html"><i class="material-icons visible-on-small-only">home</i></a></li>
                 <li><a href="#"><i class="material-icons">more_vert</i></a></li>
@@ -73,45 +73,42 @@
                     </div>
                 </div>
 
-                <div class="col s10 ml-20">
-                    <div class="row">
-                        <div class="col s12 center-align">
-                            <img src="imagenes/js.jpg" alt="Bienvenido a JavaScript" class="responsive-img jspng">
-                        </div>
-                    </div>
 
-                    <div class="row">
- 
-                        <div class="col s12 m8 presentacion-texto">
-                            <h4>¡Bienvenido/a a tu Curso de JavaScript! 🚀</h4>
-                            <p>
-                                Prepárate para dar un gran paso en tu camino como desarrollador/a web. Este curso está diseñado para que domines JavaScript desde los fundamentos hasta conceptos avanzados y te sientas seguro/a creando proyectos reales.
-                            </p>
-                            <h5>¿Qué te espera en este curso?</h5>
-                            <ul>
-                                <li><strong>Lecciones dinámicas:</strong> Aprende paso a paso con explicaciones claras y ejemplos prácticos.</li>
-                                <li><strong>Proyectos prácticos:</strong> Pon a prueba tus conocimientos construyendo aplicaciones y funciones interactivas.</li>
-                                <li><strong>Recursos adicionales:</strong> Ejercicios, guías y tips para seguir aprendiendo incluso después del curso.</li>
-                                <li><strong>Soporte continuo:</strong> Si tienes dudas, nuestra comunidad y mentores están aquí para ayudarte.</li>
-                            </ul>
-                            <h5>¿Por dónde empezar?</h5>
-                            <ul>
-                                <li>Revisa el módulo introductorio para familiarizarte con la plataforma y configurar tu entorno de desarrollo.</li>
-                                <li>Dedica tiempo a cada lección y practica con los ejercicios sugeridos.</li>
-                                <li>Avanza a tu ritmo: el contenido está disponible cuando lo necesites.</li>
-                            </ul>
-                            <p>
-                                💡 <strong>Consejo:</strong> La clave para aprender JavaScript es practicar. No te preocupes si algo no te sale al principio; ¡es parte del proceso!
-                            </p>
-                        </div>
-                        <div class="col s4 hide-on-small-only">
-                            <img src="imagenes/jspc.png" alt="Imagen decorativa" class="responsive-img jspc">
-                        </div>
-                    </div>
+                <div class="col s10 unidades">
+                    <ul class="collapsible expandable">
+                        <li>
+                            <div class="collapsible-header pink lighten-2"><i class="material-icons">arrow_drop_down</i>Unidades</div>
+                            <div class="collapsible-body pink lighten-3">
+                                <ul>
+                                    <li>Unidad 1: Introducción a JavaScript</li>
+                                    <li>Unidad 2: Fundamentos del Lenguaje</li>
+                                    <li>Unidad 3: Funciones y Alcance</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header pink lighten-2"><i class="material-icons">arrow_drop_down</i>Ejercicios</div>
+                            <div class="collapsible-body pink lighten-3">
+                                <ul>
+                                    <li>Generador de Números Aleatorios</li>
+                                    <li>Buscador en un Array</li>
+                                    <li>Generador de Colores Aleatorios</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let elems = document.querySelectorAll('.collapsible.expandable');
+            let instances = M.Collapsible.init(elems, {
+                accordion: false 
+            });
+        });
+    </script>
 </body>
 </html>
