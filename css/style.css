@@ -453,7 +453,7 @@ body {
        column-gap: 25px !important;
 }
 @media (max-width: 750px) {
-  #asignaturasMaterialize #brillo {
+  #asignaturasMaterialize #user {
     display: none;
   }
   #asignaturasMaterialize .asignaturas-barra-lateral {
@@ -465,6 +465,79 @@ body {
   #asignaturasMaterialize #idLogo5, #asignaturasMaterialize #idLogo6 {
     display: block !important;
     border: 1px solid white;
+  }
+}
+
+#asignaturasClaro h5, #asignaturasClaro h6, #asignaturasClaro p {
+  color: black;
+}
+#asignaturasClaro #lateral {
+  height: 320px;
+}
+#asignaturasClaro #lateral ul {
+  line-height: 3.5;
+}
+#asignaturasClaro #lateral ul i {
+  width: 20px;
+}
+#asignaturasClaro nav .logo .logoImagen {
+  height: 60px !important;
+  padding: 5px !important;
+}
+#asignaturasClaro h5 {
+  margin-left: 2%;
+}
+#asignaturasClaro #fila-fotos {
+  height: 225px !important;
+}
+#asignaturasClaro #fila-fotos #idLogo5, #asignaturasClaro #fila-fotos #idLogo6 {
+  display: none;
+}
+#asignaturasClaro #fila-fotos .iframe-logo {
+  height: 100%;
+}
+#asignaturasClaro #fila-fotos .iframe-logo .card-content {
+  padding: 0 !important;
+  height: 100%;
+  overflow: inherit;
+}
+#asignaturasClaro #fila-fotos .iframe-logo iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 12px;
+}
+#asignaturasClaro #idListaAsignaturas, #asignaturasClaro #divider {
+  margin-top: -20px;
+}
+#asignaturasClaro .divider {
+  background-color: #ab80d7;
+  height: 2px;
+}
+#asignaturasClaro #barra-lateral-inferior {
+  height: 300px !important;
+}
+#asignaturasClaro .logo-peque {
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+}
+#asignaturasClaro .div-lista {
+  -moz-column-gap: 25px !important;
+       column-gap: 25px !important;
+}
+@media (max-width: 750px) {
+  #asignaturasClaro #user {
+    display: none;
+  }
+  #asignaturasClaro .asignaturas-barra-lateral {
+    display: none;
+  }
+  #asignaturasClaro #idLogo1, #asignaturasClaro #idLogo2 {
+    display: none;
+  }
+  #asignaturasClaro #idLogo5, #asignaturasClaro #idLogo6 {
+    display: block !important;
+    border: 1px solid black;
   }
 }
 

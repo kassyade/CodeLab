@@ -58,7 +58,7 @@
     }
 
     @media (max-width:750px) {
-        #brillo {
+        #user {
             display: none;
         }
         .asignaturas-barra-lateral {
@@ -70,6 +70,85 @@
         #idLogo5, #idLogo6 {
             display: block !important;
             border: 1px solid white;
+        }
+    }
+}
+
+#asignaturasClaro {
+    h5, h6, p {
+        color: black;
+    }
+    #lateral {
+        height: 320px;
+        ul {
+            line-height: 3.5;
+            i {
+                width: 20px;
+            }
+        }
+    }
+
+    nav .logo .logoImagen {
+        height: 60px !important;
+        padding: 5px !important;
+    }
+    
+    h5 {
+        margin-left: 2%;
+    }
+
+    #fila-fotos {
+        height: 225px !important;
+        #idLogo5, #idLogo6 {display: none;}
+        .iframe-logo {
+            height: 100%;
+    
+            .card-content {
+                padding: 0 !important;
+                height: 100%;
+                overflow:inherit;
+            }
+    
+            iframe {
+                width: 100% !important;
+                height: 100% !important;
+                border-radius: 12px;
+            }
+        }
+    }
+
+    #idListaAsignaturas, #divider {
+        margin-top: -20px;
+    }
+    .divider {
+        background-color: #ab80d7;
+        height: 2px;
+    }
+    #barra-lateral-inferior {
+        height: 300px !important;
+    }
+    .logo-peque {
+        width: 45px;
+        height: 45px;
+        overflow: hidden;
+    }
+    .div-lista {
+        column-gap: 25px !important;
+    }
+
+    @media (max-width:750px) {
+        #user {
+            display: none;
+        }
+        .asignaturas-barra-lateral {
+            display: none;
+        }
+        #idLogo1, #idLogo2 {
+            display: none;
+        }
+        #idLogo5, #idLogo6 {
+            display: block !important;
+            border: 1px solid black;
         }
     }
 }
