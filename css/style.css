@@ -148,7 +148,7 @@ body {
   color: #ffffff;
 }
 #contenedorPrincipal .formulario .input-field input {
-  color: #ffffff;
+  color: black;
   border-bottom: 1px solid #ffffff;
 }
 #contenedorPrincipal .formulario .input-field input:focus {
