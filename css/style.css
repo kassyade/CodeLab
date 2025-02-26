@@ -393,7 +393,7 @@ body {
   margin: 0;
 }
 
-.responsive-img {
+.jspng {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
@@ -438,44 +438,47 @@ body {
   margin-bottom: 0;
 }
 
-.unidades, .ejercicios {
+.collapsible-header {
   background-color: #464646;
-  padding: 10px;
-  border-radius: 5px;
-  width: 100%;
-  margin: 30px;
-  margin-left: 300px;
-  margin-top: 18%;
-}
-.unidades h2, .ejercicios h2 {
-  color: #ab80d7;
-  font-family: Arial, sans-serif;
-  text-align: left;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #ab80d7;
-}
-.unidades ul, .ejercicios ul {
-  list-style: none;
-  padding: 0;
-}
-.unidades ul li, .ejercicios ul li {
-  padding: 8px;
-  border-bottom: 1px solid #ab80d7;
   color: #eee;
-  font-family: Arial, sans-serif;
-  font-size: 14pt;
-  transition: background 0.3s ease;
+  font-size: 1.2em;
+  padding: 15px;
+  display: flex;
+  align-items: center;
 }
-.unidades ul li:last-child, .ejercicios ul li:last-child {
-  border-bottom: none;
-}
-.unidades ul li:hover, .ejercicios ul li:hover {
-  background: #606060;
-  cursor: pointer;
+.collapsible-header i.material-icons {
+  margin-right: 10px;
 }
 
-.video {
-  margin-left: 50%;
+.collapsible-body {
+  background-color: #737272;
+  padding: 15px;
+}
+.collapsible-body ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.collapsible-body ul li {
+  padding: 10px 0;
+  font-size: 1.1em;
+  color: #eee;
+  border-bottom: 1px solid #ab80d7;
+}
+.collapsible-body ul li:last-child {
+  border-bottom: none;
+}
+
+.collapsible-header:hover {
+  background-color: #9159cb;
+}
+
+.collapsible.popout {
+  border: none;
+  box-shadow: none;
+}
+.collapsible.popout li {
+  margin: 0;
 }
 
 .foro {

@@ -1,45 +1,52 @@
-.unidades, .ejercicios {
-  background-color: $color-secondario;
-  padding: 10px;
-  border-radius: 5px;
-  width: 100%;
-  margin: 30px;
-  margin-left: 300px;
 
-  margin-top: 18%;
 
-  h2 {
-    color: $color-principal;
-    font-family: $font-stack;
-    text-align: left;
-    padding-bottom: 5px;
-    border-bottom: 2px solid $color-principal;
-  }
+// Estilos para los encabezados de los desplegables
+.collapsible-header {
+    background-color: $color-secondario; // Color principal para el encabezado
+    color: $text-claro; // Texto en blanco
+    font-size: 1.2em; // Tamaño de la fuente
+    padding: 15px; // Espaciado interno
+    display: flex;
+    align-items: center;
 
-  ul {
-    list-style: none;
-    padding: 0;
+    i.material-icons {
+        margin-right: 10px; // Espacio entre el ícono y el texto
+    }
+}
+
+// Estilos para el cuerpo de los desplegables
+.collapsible-body {
+    background-color: #737272; // Fondo del menú
+    padding: 15px; // Espaciado interno
+    ul {
+        list-style-type: none; // Quitar viñetas de la lista
+        padding: 0;
+        margin: 0;
+
+        li {
+            padding: 10px 0; // Espaciado entre elementos de la lista
+            font-size: 1.1em; // Tamaño de la fuente
+            color: $text-claro; // Texto claro
+            border-bottom: 1px solid $color-principal;
+
+            &:last-child {
+                border-bottom: none; // Quitar borde del último elemento
+            }
+        }
+    }
+}
+
+// Estilos para el hover y estado activo
+.collapsible-header:hover {
+    background-color: darken($color-principal, 10%); // Color más oscuro al pasar el ratón
+}
+
+// Permitir que ambos desplegables se abran a la vez
+.collapsible.popout {
+    border: none;
+    box-shadow: none;
 
     li {
-      padding: 8px;
-      border-bottom: 1px solid $color-principal;
-      color: $text-claro;
-      font-family: $font-stack;
-      font-size: 14pt;
-      transition: background 0.3s ease;
-
-      &:last-child {
-        border-bottom: none;
-      }
-
-      &:hover {
-        background: lighten($color-secondario, 10%);
-        cursor: pointer;
-      }
+        margin: 0;
     }
-  }
-}
-.video {
-
-  margin-left: 50%;
 }
