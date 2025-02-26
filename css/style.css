@@ -653,9 +653,6 @@ body {
   #asignaturasClaro #user {
     display: none;
   }
-  #asignaturasClaro .asignaturas-barra-lateral {
-    display: none;
-  }
   #asignaturasClaro #idLogo1, #asignaturasClaro #idLogo2 {
     display: none;
   }
