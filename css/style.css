@@ -576,11 +576,11 @@ body {
   -moz-column-gap: 25px !important;
        column-gap: 25px !important;
 }
+#asignaturasMaterialize h5, #asignaturasMaterialize h6, #asignaturasMaterialize p {
+  color: white;
+}
 @media (max-width: 750px) {
   #asignaturasMaterialize #user {
-    display: none;
-  }
-  #asignaturasMaterialize .asignaturas-barra-lateral {
     display: none;
   }
   #asignaturasMaterialize #idLogo1, #asignaturasMaterialize #idLogo2 {
