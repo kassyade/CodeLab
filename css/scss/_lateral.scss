@@ -1,11 +1,11 @@
 .lateral {
     width: $barra-width;
     background-color: $color-secondario;
-    height: calc(100vh - 60px); // Ajusta la altura restando la altura del header-global
+    height: calc(100vh - 60px);
     position: fixed;
-    top: 110px; // Colócalo debajo del header-global
-    left: 3%; // Ajusta el margen izquierdo para que no se superponga con lateral-global
-    z-index: 998; // Asegura que esté por debajo de lateral-global
+    top: 110px;
+    left: 3%;
+    z-index: 998;
     padding: 20px;
     font-size: 14pt;
 
@@ -27,6 +27,52 @@
             &.seleccionada {
                 border-left: solid 3px $color-principal;
             }
+        }
+    }
+}
+
+
+.menu-lateral-secundario {
+    background-color: $color-secondario;
+    height: 85.84vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: $barra-width; 
+    overflow-y: auto;
+
+    .contenido-columna {
+        padding: 20px;
+    }
+
+
+    .collection {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .collection .collection-item {
+        background-color: transparent;
+        border: none; 
+        padding: 10px 0;
+        cursor: pointer;
+
+        a {
+            color: white;
+            display: block; 
+            padding: 10px 20px; 
+            font-size: 14pt;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        &.seleccionada {
+            border-left: solid 3px $color-principal;
+
         }
     }
 }

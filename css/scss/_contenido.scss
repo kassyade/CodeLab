@@ -84,7 +84,7 @@
 }
 
 .bodyJS {
-    background-color: #161616;
+    background-color: $fondo-negro;
     color: white;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -95,7 +95,6 @@
     margin: 0; 
 }
 
-/* Contenido principal */
 .contenido {
     padding: 20px;
 }
