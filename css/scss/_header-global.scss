@@ -1,14 +1,22 @@
+/* Estilos para el header global */
 .header-global {
     background-color: #282C34;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; // Asegura que esté por encima de otros elementos
-    height: 60px; // Altura fija para el header-global
-    .logo {
-        width: 130px;
+    padding: 10px 20px;
+    
+    img {
+        width: 120px;
         height: auto;
+    }
+}
+
+.header-icons {
+    a {
+        color: white;
+        font-size: 24px;
+        text-decoration: none;
+
+        &:hover {
+            color: #ba68c8;
+        }
     }
 }

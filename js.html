@@ -3,71 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso de JavaScript | CodeLab</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Layout con Materialize</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script></head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
-<body>
-    <div class="general">
-        <header class="header-asignaturas">
-            <img class="logo" src="imagenes/LogoTN2.png" alt="Logo Code Lab">
-            <ul>
-                <li><i class="material-icons">brightness_medium</i></li>
-                <li><i class="material-icons">perm_identity</i></li>
-                <li><i class="material-icons">more_vert</i></li>
-            </ul>
-        </header>
+<body class="bodyJS">
 
-        <div class="barra-lateral">
-            <ul>
-                <li><i class="material-icons">menu</i></li>
-                <li><i class="material-icons">add</i></li>
-            </ul>
-            <ul>
-                <li><i class="material-icons">home</i></li>
-                <li><i class="material-icons">account_circle</i></li>
-                <li><i class="material-icons">event</i></li>
-                <li><i class="material-icons">help</i></li>
+    <nav class="header-global">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo left">
+                <img src="imagenes/LogoTN2.png" alt="LogoTN2" class="logo-header">
+            </a>
+            <ul class="right header-icons">
+                <li><a href="#"><i class="material-icons">brightness_6</i></a></li>
+                <li><a href="#"><i class="material-icons">person</i></a></li>
+                <li><a href="#"><i class="material-icons">more_vert</i></a></li>
             </ul>
         </div>
+    </nav>
 
-    <div class="lateral">
-        <ul>
-            <li class="seleccionada">Página de Inicio</li>
-            <li><a href="js-unidades.html">Contenidos</a></li>
-            <li><a href="js-foro.html">Foro</a></li>
-        </ul>
-    </div>
-    <div class="contenido">
-        <header class="header">
-        <header class="header">
-            <h2 class="hamb"> ☰ JavaScript</h2>
-        </header>
-        <div class="curso">
-            <div class="intro">
-                <img src="./imagenes/js.jpg" alt="JavaScript Logo">
-            </div>
-            <h3>¡Bienvenido/a a tu Curso de JavaScript!</h3>
-            <p>Prepárate para dar un gran paso en tu camino como desarrollador/a web. Este curso está diseñado para que domines JavaScript desde los fundamentos hasta conceptos avanzados y te sientas seguro/a creando proyectos reales.</p>
-            <h3>¿Qué te espera en este curso?</h3>
-            <ul>
-                <li>Lecciones dinámicas: Aprende paso a paso con explicaciones claras y ejemplos prácticos.</li>
-                <li>Proyectos prácticos: Pon a prueba tus conocimientos construyendo aplicaciones y funciones interactivas.</li>
-                <li>Recursos adicionales: Ejercicios, guías y tips para seguir aprendiendo incluso después del curso.</li>
-                <li>Soporte continuo: Si tienes dudas, nuestra comunidad y mentores están aquí para ayudarte.</li>
-            </ul>
-            <div><img class="jspc" src="./imagenes/jspc.png" alt=""></div>
-            <h3>¿Por dónde empezar?</h3>
-            <ol>
-                <li>Revisa el módulo introductorio para familiarizarte con la plataforma y configurar tu entorno de desarrollo.</li>
-                <li>Dedica tiempo a cada lección y practica con los ejercicios sugeridos.</li>
-                <li>Avanza a tu ritmo: el contenido está disponible cuando lo necesites.</li>
-            </ol>
-            <p class="consejo">Consejo: La clave para aprender JavaScript es practicar. ¡No te preocupes si algo no te sale al principio; es parte del proceso!</p>
+    <div class="row">
+
+        <div class="col s.5 menu-lateral-global">
+            <a><i class="material-icons">menu</i></a>
+            <a><i class="material-icons">add</i></a>
+            <a href="asignaturasMaterialize.html"><i class="material-icons">home</i></a>
+            <a><i class="material-icons">visibility</i></a>
+            <a><i class="material-icons">calendar_month</i></a>
+            <a><i class="material-icons">help</i></a>
+        </div>
+        <div class="col s11 contenido">
+            <p>Este es el contenido principal de la página.</p>
         </div>
     </div>
-</div>
+
+    <!-- Importar JavaScript de Materialize --
 </body>
 </html>
