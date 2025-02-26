@@ -83,7 +83,6 @@
     }
 }
 
-/* Fondo global de la página */
 .bodyJS {
     background-color: #161616;
     color: white;
@@ -91,9 +90,9 @@
     font-family: Arial, sans-serif;
 }
 
-/* Ajuste para evitar margen izquierdo en el contenido */
-.row {
-    margin: 0; /* Evita el margen lateral */
+
+.rowjs {
+    margin: 0; 
 }
 
 /* Contenido principal */
