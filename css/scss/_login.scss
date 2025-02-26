@@ -1,4 +1,4 @@
-.login-page {
+#login-page {
     background-color: #1E1E1E;
     color: white;
     display: flex;
@@ -7,7 +7,7 @@
     height: 100vh;
 }
 
-.container {
+#container {
     background-color: #464646;
     padding: 30px;
     border-radius: 10px;
@@ -15,19 +15,19 @@
     width: 100%;
     max-width: 400px;
 }
-.btn-custom {
-    a{
-        color: white;
 
+#submit-btn {
+    a {
+        color: white;
     }
     background-color: #C08FF7;
-
 }
-.btn-invitado {
-    color: white;
 
+#guest-btn {
+    color: white;
     background-color: rgb(82, 82, 158);
 }
-.btn btn-custom waves-effect waves-light{
+
+#submit-btn.waves-effect.waves-light {
     color: white;
 }
